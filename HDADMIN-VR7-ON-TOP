@@ -1,3 +1,245 @@
+-- by :) : BOKA
+-- by :P : TRX
+
+
+URL_1 = "مــــــــــــــــــــبــــــــــــــــــــــا ر كـــــ \ https://roblox.com/zZzE_041"
+URL_2 = "بــــــــر و كــــــي : https://roblox.com/VipDizrt"
+URL_3 = "عـــــمــــــك بــــــــر و كــــــــي يـــا حــــــــســـــو ن \ https://github.com/DRB7Hss"
+
+local Player = game:GetService("Players").LocalPlayer
+local PlayerGui = Player:WaitForChild("PlayerGui")
+
+if PlayerGui:FindFirstChild("HassouniAdminGui") then
+    PlayerGui.HassouniAdminGui:Destroy()
+end
+
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "HassouniAdminGui"
+ScreenGui.ResetOnSpawn = false
+ScreenGui.IgnoreGuiInset = true
+ScreenGui.Parent = PlayerGui
+
+local WaitingSound = Instance.new("Sound")
+WaitingSound.SoundId = "rbxassetid://9069609268"
+WaitingSound.Volume = 2
+WaitingSound.Looped = true
+WaitingSound.Parent = game:GetService("Workspace")
+WaitingSound:Play()
+
+local MainBackground = Instance.new("Frame")
+MainBackground.Size = UDim2.new(1, 0, 1, 0)
+MainBackground.BackgroundColor3 = Color3.fromRGB(5, 5, 5)
+MainBackground.BorderSizePixel = 0
+MainBackground.Parent = ScreenGui
+
+local RedGlow = Instance.new("ImageLabel")
+RedGlow.Size = UDim2.new(1, 0, 1, 0)
+RedGlow.BackgroundTransparency = 1
+RedGlow.Image = "rbxassetid://4837991204"
+RedGlow.ImageColor3 = Color3.fromRGB(150, 0, 0)
+RedGlow.ImageTransparency = 0.6
+RedGlow.Parent = MainBackground
+
+local Sidebar = Instance.new("Frame")
+Sidebar.Size = UDim2.new(0, 320, 0.8, 0)
+Sidebar.Position = UDim2.new(0.02, 0, 0.1, 0)
+Sidebar.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Sidebar.BorderColor3 = Color3.fromRGB(200, 0, 0)
+Sidebar.BorderSizePixel = 2
+Sidebar.Parent = MainBackground
+
+local SidebarTitle = Instance.new("TextLabel")
+SidebarTitle.Size = UDim2.new(1, 0, 0, 40)
+SidebarTitle.BackgroundColor3 = Color3.fromRGB(25, 10, 10)
+SidebarTitle.Text = "[ - ] SCRIPT CODE"
+SidebarTitle.TextColor3 = Color3.fromRGB(255, 0, 0)
+SidebarTitle.TextSize = 18
+SidebarTitle.Font = Enum.Font.SourceSansBold
+SidebarTitle.Parent = Sidebar
+
+local ScriptTextBox = Instance.new("TextBox")
+ScriptTextBox.Size = UDim2.new(0.94, 0, 0.7, 0)
+ScriptTextBox.Position = UDim2.new(0.03, 0, 0.12, 0)
+ScriptTextBox.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+ScriptTextBox.TextColor3 = Color3.fromRGB(200, 200, 200)
+ScriptTextBox.TextSize = 12
+ScriptTextBox.Font = Enum.Font.Code
+ScriptTextBox.ClearTextOnFocus = false
+ScriptTextBox.MultiLine = true
+ScriptTextBox.TextXAlignment = Enum.TextXAlignment.Left
+ScriptTextBox.TextYAlignment = Enum.TextYAlignment.Top
+ScriptTextBox.TextEditable = false
+
+local TargetScriptText = [[local STR_8086 = "https://raw.githubusercontent.com/VR7ss/OMK/refs/heads/main/Usernames"
+local STR_8087 = "انت محمي من جميع الاوامر"
+local STR_8088 = "Gold User"
+local STR_8089 = "spawn"
+local STR_8090 = "Free User"
+local STR_8091 = "Destroy"
+local STR_8092 = "Destroy"
+local STR_8093 = "bring"
+local STR_8094 = "bringto"
+local STR_8095 = "kill"
+local STR_8096 = "loopkill"
+local STR_8097 = "unloopkill"
+local STR_8098 = "loopbring"
+local STR_8099 = "unloopbring"
+local STR_8100 = "scare"
+local STR_8101 = "flash"
+local STR_8102 = "checkuser"
+local STR_8103 = "credit"
+local STR_8104 = "say"
+local STR_8105 = "spam"
+local STR_8106 = "unspam"
+local STR_8107 = "3mk"
+local STR_8108 = "jump"
+local STR_8109 = "loopjump"
+local STR_8110 = "unloopjump"
+local STR_8111 = "loud"
+local STR_8112 = "ssound"
+local STR_8113 = "unssound"
+local STR_8114 = "orbit"
+local STR_8115 = "unorbit"
+local STR_8116 = "spin"
+local STR_8117 = "unspin"
+local STR_8118 = "skyfall"
+local STR_8119 = "freeze"
+local STR_8120 = "unfreeze"
+local STR_8121 = "sit"
+local STR_8122 = "loopsit"
+local STR_8123 = "unloopsit"
+local STR_8124 = "off"
+local STR_8125 = "fov"
+local STR_8126 = "unfov"
+local STR_8127 = "gravity"
+local STR_8128 = "ungravity"
+local STR_8129 = "dance"
+local STR_8130 = "undance"
+local STR_8131 = "kick"
+local STR_8132 = "kickmsg"
+local STR_8133 = "unbenx"
+local STR_8134 = "benx"
+local STR_8135 = "fling"
+local STR_8136 = "explode"
+local STR_8137 = "void"
+local STR_8138 = "spawn"
+local STR_8139 = "game"
+local STR_8140 = "Workspace"
+local STR_8141 = "DescendantAdded"
+local STR_8142 = "Connect"
+local STR_8143 = "Character"
+local STR_8144 = "FindFirstChild"
+local STR_8145 = "HumanoidRootPart"
+local STR_8146 = "game"
+local STR_8147 = "Players"
+local STR_8148 = "LocalPlayer"
+local STR_8149 = "CFrame"]]
+
+ScriptTextBox.Text = TargetScriptText
+ScriptTextBox.Parent = Sidebar
+
+local CopyButton = Instance.new("TextButton")
+CopyButton.Size = UDim2.new(0.44, 0, 0.1, 0)
+CopyButton.Position = UDim2.new(0.03, 0, 0.85, 0)
+CopyButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+CopyButton.BorderColor3 = Color3.fromRGB(200, 0, 0)
+CopyButton.Text = "[ COPY ]"
+CopyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CopyButton.TextSize = 14
+CopyButton.Font = Enum.Font.SourceSansBold
+CopyButton.Parent = Sidebar
+
+CopyButton.MouseButton1Click:Connect(function()
+    setclipboard(TargetScriptText)
+    CopyButton.Text = "[ DONE ]"
+    task.wait(2)
+    CopyButton.Text = "[ COPY ]"
+end)
+
+local ExecuteButton = Instance.new("TextButton")
+ExecuteButton.Size = UDim2.new(0.44, 0, 0.1, 0)
+ExecuteButton.Position = UDim2.new(0.53, 0, 0.85, 0)
+ExecuteButton.BackgroundColor3 = Color3.fromRGB(50, 10, 10)
+ExecuteButton.BorderColor3 = Color3.fromRGB(255, 0, 0)
+ExecuteButton.Text = "[ EXECUTE ]"
+ExecuteButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteButton.TextSize = 14
+ExecuteButton.Font = Enum.Font.SourceSansBold
+ExecuteButton.Parent = Sidebar
+
+ExecuteButton.MouseButton1Click:Connect(function()
+    pcall(function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-VR7-146159"))()
+    end)
+end)
+
+local MainTitle = Instance.new("TextLabel")
+MainTitle.Size = UDim2.new(0.6, 0, 0.15, 0)
+MainTitle.Position = UDim2.new(0.38, 0, 0.25, 0)
+MainTitle.BackgroundTransparency = 1
+MainTitle.Text = "اكتب: مبارك عم حسوني"
+MainTitle.TextColor3 = Color3.fromRGB(255, 0, 0)
+MainTitle.TextSize = 45
+MainTitle.Font = Enum.Font.FredokaOne
+MainTitle.TextStrokeTransparency = 0
+MainTitle.TextStrokeColor3 = Color3.fromRGB(0, 0, 0)
+MainTitle.Parent = MainBackground
+
+task.spawn(function()
+    local OriginalPos = MainTitle.Position
+    while MainBackground.Parent do
+        local X_Offset = math.random(-4, 4)
+        local Y_Offset = math.random(-4, 4)
+        MainTitle.Position = UDim2.new(OriginalPos.X.Scale, OriginalPos.X.Offset + X_Offset, OriginalPos.Y.Scale, OriginalPos.Y.Offset + Y_Offset)
+        task.wait(0.03)
+    end
+end)
+
+local InputBox = Instance.new("TextBox")
+InputBox.Size = UDim2.new(0.4, 0, 0.08, 0)
+InputBox.Position = UDim2.new(0.48, 0, 0.45, 0)
+InputBox.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+InputBox.BorderColor3 = Color3.fromRGB(255, 0, 0)
+InputBox.BorderSizePixel = 2
+InputBox.Text = ""
+InputBox.PlaceholderText = "[ WRITE HERE ]"
+InputBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+InputBox.PlaceholderColor3 = Color3.fromRGB(100, 100, 100)
+InputBox.TextSize = 22
+InputBox.Font = Enum.Font.SourceSansBold
+InputBox.Parent = MainBackground
+
+local AdminActivateButton = Instance.new("TextButton")
+AdminActivateButton.Size = UDim2.new(0.4, 0, 0.08, 0)
+AdminActivateButton.Position = UDim2.new(0.48, 0, 0.58, 0)
+AdminActivateButton.BackgroundColor3 = Color3.fromRGB(150, 0, 0)
+AdminActivateButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+AdminActivateButton.BorderSizePixel = 1
+AdminActivateButton.Text = " اضغط لتشغيل الادمن "
+AdminActivateButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+AdminActivateButton.TextSize = 24
+AdminActivateButton.Font = Enum.Font.SourceSansBold
+AdminActivateButton.Parent = MainBackground
+
+AdminActivateButton.MouseButton1Click:Connect(function()
+    if InputBox.Text == "مبارك عم حسوني" then
+        WaitingSound:Stop()
+        WaitingSound:Destroy()
+        ScreenGui:Destroy()
+        pcall(function()
+            loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-VR7-146159"))()
+        end)
+    else
+        AdminActivateButton.Text = " ERROR "
+        AdminActivateButton.BackgroundColor3 = Color3.fromRGB(50, 0, 0)
+        task.wait(1.5)
+        AdminActivateButton.Text = " اضغط لتشغيل الادمن "
+        AdminActivateButton.BackgroundColor3 = Color3.fromRGB(150, 0, 0)
+    end
+end)
+
+
+
 local STR_8086 = "https://raw.githubusercontent.com/VR7ss/OMK/refs/heads/main/Usernames"
 local STR_8087 = "انت محمي من جميع الاوامر"
 local STR_8088 = "Gold User"
@@ -618,6 +860,6 @@ local STR_8702 = "game"
 local STR_8703 = "Players"
 local STR_8704 = "LocalPlayer"
 local STR_8705 = "Kick"
-local STR_8706 = "queue_on_teleport"
+local STR_8706 = "queue_n_teleport"
 local STR_8707 = "loadstring(game:HttpGet(\"https://rawscripts.net/raw/Universal-Script-VR7-146159\"))()"
 local STR_8708 = "ïÒ&K"
